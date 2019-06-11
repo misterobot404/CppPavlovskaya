@@ -2,7 +2,8 @@
 
 #include <iostream>
 #include <iomanip> 
-#include <Windows.h>
+#include <windows.h>
+#include <string>
 #include <fstream>
 
 using namespace std;
@@ -10,9 +11,11 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	system("color 0A ");
-
-	ifstream fin("text.txt");
+	//system("color 0A ");
+	string path;
+	cout << "¬ведите полный путь к файлу ";
+	cin >> path;
+	ifstream fin(path);
 	if (!fin)
 	{
 		cout << "‘айл не может быть открыт!" << endl << endl;

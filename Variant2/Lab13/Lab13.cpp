@@ -3,7 +3,6 @@
 #include <vector>
 #include <Windows.h>
 #include <algorithm>
-
 using namespace std;
 
 class Student
@@ -123,7 +122,7 @@ int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	system("color 0A ");
+	//system("color 0A ");
 
 	size_t numberStudents;
 	cout << "Введите количество студентов: ";
